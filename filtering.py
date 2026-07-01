@@ -12,3 +12,21 @@ print("Even numbers:\n", eves)
 
 adukts=np.where(ages>=40, ages, 0)  #if condition is true then return ages else return 0
 print("Adults:\n", adukts)
+
+arr = np.array([41, 42, 43, 44])
+
+# Create an empty list
+filter_arr = []
+
+# go through each element in arr
+for element in arr:
+  # if the element is higher than 42, set the value to True, otherwise False:
+  if element > 42:
+    filter_arr.append(True)
+  else:
+    filter_arr.append(False)
+
+newarr = arr[filter_arr]
+
+print(filter_arr)
+print(newarr)
